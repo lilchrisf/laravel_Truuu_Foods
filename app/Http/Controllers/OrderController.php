@@ -32,14 +32,14 @@ class OrderController extends Controller
     public function updateorder(Request $request, $id)
     {
         $orders = OrderModel::find($id);
-        $orders->status = $request->input('order_status');
+        $orders->status = $request->input('status');
         $orders->update();
         return view('dashorderview', compact('orders'))->with('status',"Order updated");
     }
 
     public function view($id)
     {
-        $orders = OrderModel::where('id', $id)->where('user_id', Auth::id())->first();
+        $orders = OrderModel::where('id', $id)->first();
         return view('dashorderview', compact('orders'));
     }
 

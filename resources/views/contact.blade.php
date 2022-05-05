@@ -84,11 +84,11 @@
                 <span>Subject</span>
             </div>
             <div class="inputBox">
-                <textarea required="required"></textarea>
+                <textarea required="required" name="message"></textarea>
                 <span>type your Message...</span>
             </div>
             <div class="inputBox" style="background-color: rgba(255, 255, 255, 0.452);">
-                <input type="submit" name="message" value="send">
+                <input type="submit">
             </div>
         </form>
     </div>

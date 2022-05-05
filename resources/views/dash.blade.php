@@ -65,7 +65,7 @@
                 </a>
             </li>
             <li>
-                <a href="categories"><span class="las la-book-open"></span>
+                <a href="/"><span class="las la-book-open"></span>
                     <span>Pages</span>
                 </a>
             </li>

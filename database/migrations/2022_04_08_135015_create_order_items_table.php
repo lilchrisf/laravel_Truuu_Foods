@@ -27,6 +27,7 @@ return new class extends Migration
         //     $table->id();
         //     $table->foreignId('order_id')->constrained('orders', 'id');
         //     $table->foreignId('prod_id')->constrained('carts', 'id');
+        //     $table->string('order_model_id');
         //     $table->string('qty');
         //     $table->string('price');
         //     $table->timestamps();

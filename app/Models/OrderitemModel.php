@@ -15,7 +15,6 @@ class OrderitemModel extends Model
         'prod_id',
         'price',
         'qty',
-        'order_model_id',
     ];
 
     /**

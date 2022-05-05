@@ -13,23 +13,22 @@ return new class extends Migration
      */
     public function up()
     {
+        // Schema::create('carts', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->string('user_id');
+        //     $table->string('prod_id');
+        //     $table->string('prod_qty');
+        //     $table->timestamps();
+        // });
+
+
         Schema::create('carts', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
-            $table->string('prod_id');
+            $table->foreignId('user_id')->constrained('users', 'id');
+            $table->foreignId('prod_id')->constrained('products', 'id');
             $table->string('prod_qty');
             $table->timestamps();
         });
-
-
-        // Schema::create('carts', function (Blueprint $table) {
-        //     $table->id();
-        //     $table->foreignId('user_id')->constrained('users', 'id');
-        //     $table->foreignId('prod_id')->constrained();
-        //     $table->string('prod_qty');
-        //     $table->string('price');
-        //     $table->timestamps();
-        // });
     }
 
     /**

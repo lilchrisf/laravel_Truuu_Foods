@@ -119,12 +119,12 @@
 
                                 <div class="div2">
                                     <div class="td">Status</div>
-                                    <input class="inputform" type="checkbox"  id="password" name="status" value="{{$product->status}}">
+                                    <input class="inputform" type="checkbox" id="password" name="status" value="1">
                                 </div>
 
                                 <div class="div2">
                                     <div class="td">Trending</div>
-                                    <input class="inputform" type="checkbox"  id="password" name="trending" value="{{$product->trending}}">
+                                    <input class="inputform" type="checkbox" id="password" name="trending" value="1">
                                 </div>
 
                                 <div class="div2">

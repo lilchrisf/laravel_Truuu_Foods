@@ -87,13 +87,13 @@
                                 </div>
 
                                 <div class="div2">
-                                    <div class="td">Image</div>
-                                    <input class="inputform" type="text" id="password" name="image" value="{{ $category->image }}">
+                                    <div class="td">Popular</div>
+                                    <input class="inputform" type="text" id="password" name="popular" value="{{ $category->popular }}">
                                 </div>
 
                                 <div class="div2">
-                                    <div class="td">Popular</div>
-                                    <input class="inputform" type="text" id="password" name="popular" value="{{ $category->popular }}">
+                                    <div class="td">Image</div>
+                                    <input class="inputform" type="text" id="password" name="image" value="{{ $category->image }}">
                                 </div>
 
                                 <div class="div2">

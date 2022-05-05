@@ -27,12 +27,6 @@ class ProductController extends Controller
         return view('dashboard',compact('user','product','orders','products','category'));
     }
 
-    public function productList()
-    {
-        $orders = OrderModel::where('user_id',Auth::id())->get();
-        return view('food', compact('orders'));
-    }
-
     public function orderview($id)
     {
         $orders = OrderModel::where('id', $id)->where('user_id', Auth::id ())->get();
@@ -144,17 +138,20 @@ public function view($cate_slug, $product_slug)
      }
 
 }
+
+
+// search bar search products by name
   public function search(Request $request)
   {
       $search_product = $request->product_name;
 
       if($search_product != "")
       {
-          $product =  ProductModel::where('name','Like',"%$search_product%")->with('category')->first();
-        //   dd($product);
+          $product =  ProductModel::where('name','Like',"%$search_product%")->with('cate')->first();
+
           if($product)
           {
-            //   return redirect('view-product/'.$product->category->slug.'/'.$product->slug);
+              return redirect('view-product/'.$product->cate->slug.'/'.$search_product);
           }
           else
           {
@@ -165,17 +162,13 @@ public function view($cate_slug, $product_slug)
       {
           return redirect()->back();
       }
-
+    //    return ProductModel::where("name","Like","%".$name."%")->get();
   }
 
 
 // display the drop down product list for the search using Ajax
   public function productlistAjax()
   {
-
-    // return ProductModel::where("name","Like","%".$name."%")->get();
-
-
       $products = ProductModel::select('name')->where('status','0')->get();
       $data = [];
 
@@ -183,9 +176,5 @@ public function view($cate_slug, $product_slug)
           $data[] = $item['name'];
       }
       return $data;
-
-    // $get_name = $request->search_prod;
-    // $user = ProductModel::where('name','LIKE','$',$get_name.'%')->get();
-    // return view('category',compact('user'));
   }
 }

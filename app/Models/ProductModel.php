@@ -11,7 +11,7 @@ class ProductModel extends Model
     use HasFactory;
     protected $table = 'products';
     protected $fillable = [
-        'cate_id',  
+        'cate_id',
         'name',
         'small_description',
         'description',
@@ -27,7 +27,7 @@ class ProductModel extends Model
         'meta_descrip',
     ];
 
-    public function category()
+    public function cate()
     {
         return $this->belongsTo(CategoryModel::class);
     }

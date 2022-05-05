@@ -116,7 +116,7 @@ Route::get ('view-product/{cate_slug}/{prod_slug}', [CategoryController::class, 
 
 
 
-// Route::get('dashboard', [HomeController::class, 'adminHome'])->name('dashboard')->middleware('is_admin');
+Route::get('dashboard', [HomeController::class, 'adminHome'])->name('dashboard')->middleware('is_admin');
 // Route::get('dashboard', [HomeController::class,'products'])->name('dashboard')->middleware('is_admin');
 // Route::post ('addto-cart',[CartController::class, 'addProducts']);
 // Route::get('addto-cart', function(){
@@ -163,12 +163,5 @@ Route::get('/users', function (Request $request) {
 
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/category', [App\Http\Controllers\HomeController::class, 'index'])->name('category');
 Auth::routes();
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-

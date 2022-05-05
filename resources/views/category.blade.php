@@ -332,37 +332,37 @@
 
             <div class="box">
                 <h3>locations</h3>
-                <a href="#">Clarendon</a>
-                <a href="#">Kingston</a>
-                <a href="#">Mandeville</a>
-                <a href="#">May pen</a>
-                <a href="#">Lionel Town</a>
+                <h3 style="font-size: 1.5rem">Clarendon</h3>
+                <h3 style="font-size: 1.5rem">kingston</h3>
+                <h3 style="font-size: 1.5rem">Mandevile</h3>
+                <h3 style="font-size: 1.5rem">May pen</h3>
+                <h3 style="font-size: 1.5rem">Lionel Town</h3>
             </div>
 
             <div class="box">
                 <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">Category</a>
-                <a href="#">about</a>
-                <a href="#">Populor</a>
-                <a href="#">reivew</a>
-                <a href="#">order</a>
+                <h3 style="font-size: 1.5rem">Home</h3>
+                <h3 style="font-size: 1.5rem">Category</h3>
+                <h3 style="font-size: 1.5rem">About</h3>
+                <h3 style="font-size: 1.5rem">Populor</h3>
+                <h3 style="font-size: 1.5rem">Review</h3>
+                <h3 style="font-size: 1.5rem">Order</h3>
             </div>
 
             <div class="box">
                 <h3>contact info</h3>
-                <a href="#">+1876-791-1687</a>
-                <a href="#">+1876-222-3333</a>
-                <a href="#">christopherwatson299@gmail.com</a>
-                <a href="#">Clrendon, Rocky - 1345</a>
+                <h3 style="font-size: 1.5rem">+1876-791-1687</h3>
+                <h3 style="font-size: 1.5rem">+1876-222-3333</h3>
+                <h3 style="font-size: 1.5rem">christopherwatson299@gmail.com</h3>
+                <h3 style="font-size: 1.5rem">Clrendon, Rocky - 1345</h3>
             </div>
 
             <div class="box">
                 <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">linkedin</a>
+                <h3 style="font-size: 1.5rem">facebook</h3>
+                <h3 style="font-size: 1.5rem">twitter</h3>
+                <h3 style="font-size: 1.5rem">instagram</h3>
+                <h3 style="font-size: 1.5rem">linkedin</h3>
             </div>
 
         </div>

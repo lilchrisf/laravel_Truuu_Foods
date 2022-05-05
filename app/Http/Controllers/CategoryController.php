@@ -7,6 +7,8 @@ use App\Models\CategoryModel;
 use App\Models\ProductModel;
 use App\Models\CartModel;
 use App\Models\Rating;
+use App\Models\Users;
+use DB;
 
 use Illuminate\Http\Request;
 
@@ -19,8 +21,10 @@ class CategoryController extends Controller
     public function categoryList()
     {
         $categories = CategoryModel::all();
-
-        return view('dashcategory', compact('categories'));
+        $user = DB::table('users')->count();
+        $product = DB::table('products')->count();
+        $orders = DB::table('orders')->count();
+        return view('dashcategory', compact('categories','user','product','orders'));
 }
 
 public function categoryListe()

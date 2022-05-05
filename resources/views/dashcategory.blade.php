@@ -3,7 +3,7 @@
 <div class="cards">
     <div class="card-single">
         <div>
-            {{-- <h1>{{ $user}}</h1> --}}
+            <h1>{{ $user}}</h1>
             <span>Members</span>
         </div>
 
@@ -14,7 +14,7 @@
 
     <div class="card-single">
         <div>
-            {{-- <h1>{{$product}}</h1> --}}
+            <h1>{{$product}}</h1>
             <span>Products</span>
         </div>
 
@@ -25,7 +25,7 @@
 
     <div class="card-single">
         <div>
-            {{-- <h1>{{$orders}}</h1> --}}
+            <h1>{{$orders}}</h1>
             <span>Orders</span>
         </div>
 

@@ -23,7 +23,7 @@
                 <a href="userorder">My Order</a>
                 @if (Route::has('login'))
                     @auth
-                    {{-- <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"> --}}
+                    
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 

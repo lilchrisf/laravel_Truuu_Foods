@@ -16,46 +16,46 @@ class ContactSeeder extends Seeder
     public function run()
     {
         ContactModel::create([
-            'name' => 'Snapper',
-            'email' => 1000,
-            'phone' => 'Red Snapper',
-            'subject' => 'https://www.thefishsociety.co.uk/media/image/b3/95/c3/snapper-whole-min.jpg',
-            'message' => ' whats up'
+            'name' => 'Christopher Watson',
+            'email' => 'Chris@gmail.com',
+            'phone' => '18792345673',
+            'subject' => 'Sea Food',
+            'message' => ' Do you Offer crabs that are alive '
         ]);
         ContactModel::create([
-            'name' => 'Snapper',
-            'email' => 1000,
-            'phone' => 'Red Snapper',
-            'subject' => 'https://www.thefishsociety.co.uk/media/image/b3/95/c3/snapper-whole-min.jpg',
-            'message' => ' You good'
+            'name' => 'Angella Marston',
+            'email' => 'angella@gmail.com',
+            'phone' => '18792345673',
+            'subject' => 'Fruits',
+            'message' => 'I woukd like to portner with you guys to get fresh suply for my business'
         ]);
         ContactModel::create([
-            'name' => 'Snapper',
-            'email' => 1000,
-            'phone' => 'Red Snapper',
-            'subject' => 'https://www.thefishsociety.co.uk/media/image/b3/95/c3/snapper-whole-min.jpg',
-            'message' => ' i really  like the stuff'
+            'name' => 'Mark Williams',
+            'email' => 'mark@gmail.com',
+            'phone' => '18792345673',
+            'subject' => 'Sea Food',
+            'message' => ' Do you Offer crabs that are already cooked '
         ]);
         ContactModel::create([
-            'name' => 'Snapper',
-            'email' => 1000,
-            'phone' => 'Red Snapper',
-            'subject' => 'https://www.thefishsociety.co.uk/media/image/b3/95/c3/snapper-whole-min.jpg',
-            'message' => ' whats up'
+            'name' => 'Wayne Watson',
+            'email' => 'wayne@gmail.com',
+            'phone' => '18792345673',
+            'subject' => 'Sea Food',
+            'message' => ' Do you Offer crabs that are alive '
         ]);
         ContactModel::create([
-            'name' => 'Snapper',
-            'email' => 1000,
-            'phone' => 'Red Snapper',
-            'subject' => 'https://www.thefishsociety.co.uk/media/image/b3/95/c3/snapper-whole-min.jpg',
-            'message' => ' whats up'
+            'name' => 'June Thomas',
+            'email' => 'june@gmail.com',
+            'phone' => '18792345673',
+            'subject' => 'Sea Food',
+            'message' => ' Do you Offer crabs that are alive '
         ]);
         ContactModel::create([
-            'name' => 'Snapper',
-            'email' => 1000,
-            'phone' => 'Red Snapper',
-            'subject' => 'https://www.thefishsociety.co.uk/media/image/b3/95/c3/snapper-whole-min.jpg',
-            'message' => ' whats up'
+            'name' => 'Samie Mark',
+            'email' => 'Samie@gmail.com',
+            'phone' => '18792345673',
+            'subject' => 'Sea Food',
+            'message' => ' Do you Offer crabs that are alive '
         ]);
     }
     }
